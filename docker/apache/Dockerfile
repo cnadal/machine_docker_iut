@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.2-apache
 #RUN curl -OL https://github.com/composer/composer/releases/download/2.0.11/composer.phar
 #RUN mv composer.phar /usr/local/bin/composer
 #RUN chmod +x /usr/local/bin/composer && a2enmod rewrite && service apache2 restart
