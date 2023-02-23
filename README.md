@@ -1,34 +1,32 @@
 
 
-Ce repo sous github contient les fichiers de bases permettant de mettre en place dans une machine linux (testé sous debian 9++) des services (conteneurs docker) **web**, **mysql** et **phpmyadmin**
+## 1 - Ce repo sous github contient les fichiers de bases permettant de monter des services sous docker :
 
-## 0 - Pour **clôner** ce repo dans une VM linux :
+ **web** : accès via @ip:8082
+ **mysql** : accès via le port 3306
+ **phpmyadmin** : accès via @ip:8083
+ 
+## 2 - Prérequis : avoir installé docker et docker desktop sur votre machine.
 
-	
+# Installation de Docker sous windows 
+Suivre https://docs.docker.com/desktop/install/windows-install/
 
-> 	Installer **git** si nécessaire
-	
-	apt-get install git
-> Clôner dans un dossier  
-	
-	git clone https://github.com/cnadal/machine_docker.git 
-> Clôner dans le dossier courant  
+# Installation de Docker sous mac intel
+Suivre https://docs.docker.com/desktop/install/mac-install/ (partie intel)
+ 
+Télécharger et installer https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64 
+Installation de Docker sous mac m1
 
-	git clone https://github.com/cnadal/machine_docker.git .
-	
+Suivre https://docs.docker.com/desktop/install/mac-install/
 
-## 1 - Dans le dossier clôné, installer docker avec :
-      
-	chmod 755 ./get-docker.sh
-	./get-docker.sh
 
-## 2 - Dans le dossier clôné, installer docker-compose
-    
-    chmod 755 ./install-docker-compose
-    ./install-docker-compose
-	-- Pour info, Ce fichier contient exécutable la commande suivante
-        sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-        
+Exécuter dans un terminal : 
+softwareupdate --install-rosetta
+Télécharger et installer https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64 
+Installation de Docker sous linux
+
+Suivre : https://docs.docker.com/desktop/install/linux-install/ 
+Cloner normalement de dépôt git.
 
 ## 3 - Config : 
 
