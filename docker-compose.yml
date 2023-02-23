@@ -16,6 +16,7 @@ services:
 #     - "443:443"
   db:
     image: mysql:5.7
+    platform: linux/x86_64
     container_name: ${PROJECT_NAME}_mysql
     environment:
       MYSQL_DATABASE: ${DB_NAME}
