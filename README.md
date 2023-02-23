@@ -8,22 +8,21 @@
  
 ## 2 - Prérequis : avoir installé docker et docker desktop sur votre machine.
 
-# Installation de Docker sous windows 
+### Installation de Docker sous windows 
 Suivre https://docs.docker.com/desktop/install/windows-install/
 
-# Installation de Docker sous mac intel
+### Installation de Docker sous mac intel
 Suivre https://docs.docker.com/desktop/install/mac-install/ (partie intel)
- 
-Télécharger et installer https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64 
-Installation de Docker sous mac m1
+ Télécharger et installer https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64 
 
+### Installation de Docker sous mac m1
 Suivre https://docs.docker.com/desktop/install/mac-install/
-
 
 Exécuter dans un terminal : 
 softwareupdate --install-rosetta
 Télécharger et installer https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64 
-Installation de Docker sous linux
+
+### Installation de Docker sous linux
 
 Suivre : https://docs.docker.com/desktop/install/linux-install/ 
 Cloner normalement de dépôt git.
@@ -51,13 +50,13 @@ Cloner normalement de dépôt git.
 > instruction.s
 
   
-  	docker-compose build	 	la première fois
-	docker-compose up -d		exécute les conteneurs
+  	docker compose build	 	la première fois
+	docker compose up -d		exécute les conteneurs
 						web,			PHP7.4, port 8082
 						phpmyadmin,	 	port 8083
 						mysql, 			port 3306
 
-	docker-compose stop		pour stopper les conteneurs
+	docker compose stop		pour stopper les conteneurs
 	
 	docker ps			pour lister les conteneurs (on peut alors voir id, port et nom des conteneurs)
 
